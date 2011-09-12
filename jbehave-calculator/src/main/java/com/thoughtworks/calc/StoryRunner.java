@@ -16,6 +16,7 @@ import static java.util.Arrays.asList;
 
 public class StoryRunner extends JUnitStories {
 
+    private FirefoxDriverProvider firefoxDriverProvider = new FirefoxDriverProvider();
     @Override
     public Configuration configuration() {
         return new MostUsefulConfiguration()
@@ -29,7 +30,7 @@ public class StoryRunner extends JUnitStories {
     @Override
     public List<CandidateSteps> candidateSteps() {
         return new InstanceStepsFactory(configuration(),
-                new CalculatorSteps(), new GoogleSteps()).createCandidateSteps();
+                new CalculatorSteps(), new GoogleSteps(), new WebSteps(firefoxDriverProvider), new BeforeAndAfterSteps(firefoxDriverProvider)).createCandidateSteps();
     }
 
     @Override
