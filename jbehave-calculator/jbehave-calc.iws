@@ -117,7 +117,7 @@
       <file leaf-file-name="google.story" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/resources/google.story">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="41" selection-start="223" selection-end="223" vertical-scroll-proportion="0.11556982">
+            <state line="6" column="40" selection-start="222" selection-end="222" vertical-scroll-proportion="0.11556982">
               <folding />
             </state>
           </provider>
@@ -171,8 +171,8 @@
         <option value="$PROJECT_DIR$/src/main/java/com/thoughtworks/calc/StoryRunner.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/thoughtworks/calc/WebSteps.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/thoughtworks/calc/CalculatorSteps.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/google.story" />
         <option value="$PROJECT_DIR$/build.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/google.story" />
       </list>
     </option>
   </component>
@@ -449,7 +449,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="44" y="31" width="1359" height="792" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -462,7 +462,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24885496" sideWeight="0.67113096" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24885496" sideWeight="0.67113096" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3275862" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -544,13 +544,6 @@
         <state line="85" column="7" selection-start="3238" selection-end="3238" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/google.story">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="41" selection-start="223" selection-end="223" vertical-scroll-proportion="0.11556982">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/thoughtworks/calc/FirefoxDriverProvider.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="6" column="24" selection-start="196" selection-end="196" vertical-scroll-proportion="0.0" />
@@ -564,6 +557,13 @@
     <entry file="file://$PROJECT_DIR$/build.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="18" column="107" selection-start="526" selection-end="526" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/google.story">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="40" selection-start="222" selection-end="222" vertical-scroll-proportion="0.11556982">
           <folding />
         </state>
       </provider>
