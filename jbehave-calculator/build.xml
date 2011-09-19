@@ -1,0 +1,51 @@
+<project name="tutorial" default="build">
+
+	<!--artifact:pom id="pom" file="pom.xml" />
+	<artifact:dependencies filesetId="dependency.fileset" pomRefId="pom" useScope="test" /-->
+
+	<target name="clean">
+		<delete dir="target" />
+	</target>
+
+	<target name="setup">
+		<mkdir dir="target" />
+		<mkdir dir="target/classes" />
+        <copy todir="target/classes">
+			<fileset dir="src/main/resources">
+				<include name="**/*.story" />
+				<include name="**/*.properties" />
+				<include name="**/*.xml" />
+			</fileset>
+		</copy>
+		<path id="story.classpath">
+			<fileset dir="lib" includes="**/*.jar" />
+			<pathelement location="target/classes" />
+		</path>
+		<classloader classpathref="story.classpath" />
+
+		<pathconvert targetos="unix" property="story.classpath.unix" refid="story.classpath">
+		</pathconvert>
+		<echo>Using classpath: ${story.classpath.unix}</echo>
+
+	</target>
+
+	<target name="compile" depends="setup">
+		<javac srcdir="src/main/java" destdir="target/classes" debug="on" debuglevel="lines,source" includes="**/*.java,**/*.xml">
+			<classpath refid="story.classpath" />
+		</javac>
+	</target>
+
+	<target name="run-stories-as-embeddables" depends="compile">
+		<taskdef name="runStoriesAsEmbeddables" classname="org.jbehave.ant.RunStoriesAsEmbeddables" classpathref="story.classpath" />
+		<runStoriesAsEmbeddables includes="**/StoryRunner.java" batch="false" ignoreFailureInStories="true" ignoreFailureInView="true" generateViewAfterStories="true"
+			systemproperties="java.awt.headless=true,project.dir=${basedir}" />
+	</target>
+
+	<target name="run-stories-as-paths" depends="compile">
+		<taskdef name="runStoriesAsPaths" classname="org.jbehave.ant.RunStoriesAsPaths" classpathref="story.classpath" />
+		<runStoriesAsPaths includes="**/*.story" batch="false" ignoreFailureInStories="true" ignoreFailureInView="true" generateViewAfterStories="true" />
+	</target>
+
+	<target name="build" depends="run-stories-as-embeddables,run-stories-as-paths" />
+
+</project>
